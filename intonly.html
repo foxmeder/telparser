@@ -4,6 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="jquery.fs.selecter.js" type="text/javascript"></script>
+<link href="jquery.fs.selecter.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
 
@@ -22,5 +24,21 @@ $("#numonly").keyup(function(e){
 	}
 });
 </script>
+
+<select id="search_select">
+
+<option value="1test">11111</option>
+<option selected="selected" value="2test">22222</option>
+<option value="3test">33333</option>
+
+</select>
+<div style="height:140px"></div>
+<script type="text/javascript">
+$("#search_select").change(function(){
+	console.log($(this).val());
+});
+$("#search_select").selecter();
+</script>
+
 </body>
 </html>
