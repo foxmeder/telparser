@@ -8,6 +8,7 @@
 
 ;(function ($, window) {
 	"use strict";
+	var a = 0;
 
 	var guid = 0,
 		isFirefox = window.navigator.userAgent.toLowerCase().indexOf('firefox') > -1,
